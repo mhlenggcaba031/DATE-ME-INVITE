@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>You're invited ❤️</title>
+<style>
+:root{--bg:#fff0f3;--card:#fffafb;--ink:#4a0f28;--mute:#8b5468;--rose:#e0365f;--rose2:#ff7a98;--gold:#b8892f;--line:#f3c9d4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c0811;--card:#2b0f1c;--ink:#ffe9ee;--mute:#c993a6;--rose:#ff5c82;--rose2:#ff9ab1;--gold:#e3b95c;--line:#4d2132}}
+:root[data-theme="dark"]{--bg:#1c0811;--card:#2b0f1c;--ink:#ffe9ee;--mute:#c993a6;--rose:#ff5c82;--rose2:#ff9ab1;--gold:#e3b95c;--line:#4d2132}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden;position:relative}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:700;line-height:1.1;margin:0 0 .6rem}
+h1{font-size:clamp(2.1rem,9vw,3.2rem)}h2{font-size:clamp(1.7rem,7vw,2.4rem)}
+p{margin:.3rem 0 1rem;color:var(--mute)}
+.fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:5}
+.fx i{position:absolute;font-style:normal;animation:rise linear forwards;opacity:.0}
+@keyframes rise{0%{transform:translateY(0) scale(.6);opacity:0}15%{opacity:.5}100%{transform:translateY(-110vh) scale(1.1);opacity:0}}
+@keyframes fall{to{transform:translate(var(--x),105vh) rotate(var(--r));opacity:1}}
+main{position:relative;z-index:2;height:100%;max-width:520px;margin:0 auto}
+section{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;overflow-y:auto;opacity:0;visibility:hidden;transform:translateY(18px) scale(.98);transition:opacity .4s,transform .4s,visibility 0s .4s}
+section.on{opacity:1;visibility:visible;transform:none;transition:opacity .4s,transform .4s}
+.card{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px 22px;width:100%;box-shadow:0 18px 50px -24px var(--rose)}
+.btn{font:inherit;font-weight:700;border:0;border-radius:999px;padding:16px 30px;min-height:54px;cursor:pointer;color:#fff;background:linear-gradient(135deg,var(--rose),var(--rose2));box-shadow:0 10px 24px -10px var(--rose);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.96)}
+.btn.big{font-size:1.25rem;padding:20px 44px}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line);box-shadow:none}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.btn:focus-visible,.opt:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.row{display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;min-height:110px;width:100%;position:relative}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;margin-bottom:20px}
+.opt{font:inherit;background:var(--bg);color:var(--ink);border:2px solid var(--line);border-radius:18px;padding:14px 4px;cursor:pointer;transition:transform .2s,border-color .2s,background .2s}
+.opt b{display:block;font-size:2rem;font-weight:400}.opt span{font-size:.9rem;font-weight:600}
+.opt.sel{border-color:var(--rose);background:var(--card);transform:scale(1.06) rotate(-1.5deg);box-shadow:0 8px 20px -10px var(--rose)}
+.days{grid-template-columns:repeat(4,1fr)}.days .opt{padding:10px 2px}.days b{font-size:1.4rem;font-family:Georgia,serif;font-weight:700}
+.times{grid-template-columns:repeat(4,1fr)}.times .opt{padding:14px 2px;font-weight:700}
+.sum{width:100%;text-align:left;border-top:1px dashed var(--line);margin:.4rem 0 1.2rem}
+.sum div{display:flex;justify-content:space-between;gap:12px;padding:11px 2px;border-bottom:1px dashed var(--line)}
+.sum span{color:var(--mute)}.sum b{text-align:right}
+.fee{font-family:Georgia,serif;font-size:4.2rem;font-weight:700;color:var(--gold);margin:.2rem 0}
+.stamp{display:inline-block;border:3px double var(--gold);color:var(--gold);padding:4px 14px;border-radius:8px;font-weight:700;transform:rotate(-4deg);margin-bottom:1rem}
+.bar{width:100%;height:12px;border-radius:9px;background:var(--line);overflow:hidden;margin:1.2rem 0 .8rem}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--rose),var(--gold));transition:width 3.4s ease-in-out}
+.hero{font-size:4.5rem;animation:beat 1.2s infinite}
+@keyframes beat{50%{transform:scale(1.15)}}
+.small{font-size:.85rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="fx" id="fx" aria-hidden="true"></div>
+<main>
+
+<section id="p1" class="on">
+  <div class="hero">✉️</div>
+  <h1 style="font-size:clamp(1.8rem,7.5vw,2.6rem)">Zama Mzindle, you're cordially invited by Mhlengi Gcaba 💻❤️</h1>
+  <p>I've prepared something special for you<span class="to"></span>...</p>
+  <button class="btn big" data-go="2">❤️ Start</button>
+</section>
+
+<section id="p2">
+  <div class="card">
+    <h2>Will you go on a date with me? ❤️</h2>
+    <div class="row" id="yn">
+      <button class="btn big" id="yes">❤️ Yes</button>
+      <button class="btn ghost" id="no" style="position:relative">😭 No</button>
+    </div>
+  </div>
+</section>
+
+<section id="p3">
+  <div class="hero">🥹</div>
+  <h1>Yay! You said yes! ❤️</h1>
+  <p>I knew you wouldn't say no. 😂<br>Let's plan the perfect date...</p>
+  <button class="btn big" data-go="4">Let's go →</button>
+</section>
+
+<section id="p4">
+  <div class="card">
+    <h2>What are we eating? 🍴</h2>
+    <div class="grid" id="food"></div>
+    <button class="btn" id="foodNext" data-go="5" disabled>Continue →</button>
+  </div>
+</section>
+
+<section id="p5">
+  <div class="card">
+    <h2>When are we going? 📅</h2>
+    <div class="grid days" id="days"></div>
+    <p style="margin-bottom:.6rem">Choose your time ⏰</p>
+    <div class="grid times" id="times"></div>
+    <button class="btn" id="dateNext" data-go="6" disabled>Confirm date →</button>
+  </div>
+</section>
+
+<section id="p6">
+  <div class="card">
+    <h2>❤️ Date confirmed ❤️</h2>
+    <div class="sum" data-sum></div>
+    <button class="btn big" data-go="7">View my date →</button>
+  </div>
+</section>
+
+<section id="p7">
+  <div class="card" id="agree">
+    <h2>One last step... 😏</h2>
+    <div class="stamp">DATE AGREEMENT™ ❤️</div>
+    <p>By proceeding, you officially acknowledge that you have agreed to go on a date with me.</p>
+    <div class="small" style="color:var(--mute)">Date fee</div>
+    <div class="fee">R499</div>
+    <p class="small">Don't worry... I'm joking. 😂❤️</p>
+    <button class="btn big" id="pay">Pay R499 &amp; confirm ❤️</button>
+  </div>
+  <div class="card" id="paying" hidden>
+    <div class="hero">💳</div>
+    <h2 id="payMsg">Contacting your bank...</h2>
+    <div class="bar"><i id="barI"></i></div>
+    <p class="small">No real payment is being processed. Promise.</p>
+  </div>
+</section>
+
+<section id="p8">
+  <div class="card">
+    <div class="hero">🎉</div>
+    <h1>It's a date! ❤️</h1>
+    <p>Your date has officially been confirmed.</p>
+    <div class="sum" data-sum></div>
+    <p><i>I can't wait to spend some time with you. ❤️</i></p>
+    <button class="btn big" data-go="9">View date details →</button>
+  </div>
+</section>
+
+<section id="p9">
+  <div class="card">
+    <h2>❤️ Our date ❤️</h2>
+    <div class="sum" data-sum></div>
+    <div class="row" style="min-height:0;flex-direction:column">
+      <a class="btn" id="dir" target="_blank" rel="noopener" hidden style="text-decoration:none;width:100%">📍 Get directions</a>
+      <a class="btn ghost" id="cal" target="_blank" rel="noopener" style="text-decoration:none;width:100%">📅 Add to calendar</a>
+      <button class="btn ghost" id="share" style="width:100%">❤️ Share</button>
+    </div>
+    <p class="small" id="shareMsg" style="margin:.8rem 0 0"></p>
+  </div>
+</section>
+
+</main>
+<script>
+// Personalise via link: ?to=Name&from=Name&loc=Place&food=Burgers
+const Q=new URLSearchParams(location.search);
+const LOC=Q.get('loc')||'';
+const S={food:'',date:null,time:''};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+if(Q.get('to'))$$('.to').forEach(e=>e.textContent=', '+Q.get('to'));
+const FOODS=[['🍕','Pizza'],['🍔','Burgers'],['🍣','Sushi'],['🌮','Tacos'],['🍝','Pasta'],['🍜','Ramen']];
+const TIMES=['18:30','19:00','19:30','20:00'];
+const fmt=d=>d.toLocaleDateString(undefined,{weekday:'long',day:'numeric',month:'long'});
+
+function go(n){
+  $$('section').forEach(s=>s.classList.toggle('on',s.id==='p'+n));
+  if(n>=6)fill();
+  if(n===3)burst('❤️🎉💖✨',60);
+  if(n===8)burst('🎉💖🍔✨❤️',90);
+}
+$$('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+
+// floating hearts
+const fx=$('#fx');
+function heart(){
+  const i=document.createElement('i');
+  i.textContent=['❤️','💗','💕'][Math.random()*3|0];
+  i.style.cssText=`left:${Math.random()*100}%;bottom:-30px;font-size:${14+Math.random()*20}px;animation-duration:${7+Math.random()*6}s`;
+  fx.appendChild(i);setTimeout(()=>i.remove(),14000);
+}
+setInterval(heart,1100);
+function burst(set,n){
+  const a=[...set];
+  for(let k=0;k<n;k++){
+    const i=document.createElement('i');
+    i.textContent=a[Math.random()*a.length|0];
+    i.style.cssText=`left:${Math.random()*100}%;top:-30px;font-size:${16+Math.random()*18}px;opacity:1;animation:fall ${2+Math.random()*2}s ease-in forwards;--x:${(Math.random()-.5)*160}px;--r:${Math.random()*720}deg`;
+    fx.appendChild(i);setTimeout(()=>i.remove(),4500);
+  }
+}
+
+// page 2: runaway NO
+const no=$('#no');
+function dodge(e){
+  e.preventDefault();
+  const r=$('#yn').getBoundingClientRect();
+  const x=(Math.random()-.5)*Math.min(r.width-90,260),y=(Math.random()-.5)*160;
+  no.style.transform=`translate(${x}px,${y}px) rotate(${(Math.random()-.5)*30}deg)`;
+  no.style.transition='transform .25s';
+}
+['mouseenter','touchstart','click'].forEach(t=>no.addEventListener(t,dodge,{passive:false}));
+$('#yes').addEventListener('click',()=>{burst('❤️💖💕😍',70);setTimeout(()=>go(3),900)});
+
+// page 4: food
+FOODS.forEach(([e,n])=>{
+  const b=document.createElement('button');b.className='opt';b.innerHTML=`<b>${e}</b><span>${n}</span>`;
+  b.onclick=()=>{S.food=e+' '+n;$$('#food .opt').forEach(x=>x.classList.toggle('sel',x===b));$('#foodNext').disabled=false};
+  $('#food').appendChild(b);
+});
+
+// page 5: next 12 days + times
+for(let k=1;k<=12;k++){
+  const d=new Date();d.setDate(d.getDate()+k);
+  const b=document.createElement('button');b.className='opt';
+  b.innerHTML=`<span>${d.toLocaleDateString(undefined,{weekday:'short'})}</span><b>${d.getDate()}</b><span>${d.toLocaleDateString(undefined,{month:'short'})}</span>`;
+  b.onclick=()=>{S.date=d;$$('#days .opt').forEach(x=>x.classList.toggle('sel',x===b));chk()};
+  $('#days').appendChild(b);
+}
+TIMES.forEach(t=>{
+  const b=document.createElement('button');b.className='opt';b.textContent=t;
+  b.onclick=()=>{S.time=t;$$('#times .opt').forEach(x=>x.classList.toggle('sel',x===b));chk()};
+  $('#times').appendChild(b);
+});
+function chk(){$('#dateNext').disabled=!(S.date&&S.time)}
+
+// summary pages
+function fill(){
+  const rows=[['📅 Date',S.date?fmt(S.date):'—'],['⏰ Time',S.time||'—'],['🍴 Food',S.food||'—'],['📍 Location',LOC||'Secret 🤫']];
+  $$('[data-sum]').forEach(el=>el.innerHTML=rows.map(r=>`<div><span>${r[0]}</span><b></b></div>`).join(''));
+  $$('[data-sum]').forEach(el=>[...el.querySelectorAll('b')].forEach((b,i)=>b.textContent=rows[i][1]));
+  if(S.date){
+    const p=n=>String(n).padStart(2,'0'),d=S.date,[h,m]=S.time.split(':').map(Number);
+    const st=`${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}T${p(h)}${p(m)}00`;
+    const en=`${d.getFullYear()}${p(d.getMonth()+1)}${p(d.getDate())}T${p(h+2)}${p(m)}00`;
+    $('#cal').href=`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('Our date ❤️')}&dates=${st}/${en}&details=${encodeURIComponent('Food: '+S.food)}${LOC?'&location='+encodeURIComponent(LOC):''}`;
+  }
+  if(LOC){$('#dir').hidden=false;$('#dir').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(LOC)}
+}
+
+// page 7: fake payment (no real transaction)
+$('#pay').onclick=()=>{
+  $('#agree').hidden=true;$('#paying').hidden=false;
+  const msgs=['Contacting your bank...','Convincing your bank...','Bank says "aww, finally" 🥹','Payment cancelled. Love is free ❤️'];
+  let i=0;$('#payMsg').textContent=msgs[0];
+  requestAnimationFrame(()=>requestAnimationFrame(()=>$('#barI').style.width='100%'));
+  const t=setInterval(()=>{i++;if(i<msgs.length)$('#payMsg').textContent=msgs[i];else clearInterval(t)},900);
+  setTimeout(()=>go(8),4200);
+};
+
+// share
+$('#share').onclick=async()=>{
+  const url=location.href.split('#')[0],m=$('#shareMsg');
+  try{
+    if(navigator.share){await navigator.share({title:'Our date ❤️',text:'We have a date!',url});return}
+    await navigator.clipboard.writeText(url);m.textContent='Link copied ❤️';
+  }catch(e){m.textContent='Copy this link: '+url}
+};
+</script>
+</body>
+</html>
